@@ -70,7 +70,7 @@
                         color: orangered;
                     }
                 }
-                &.hover{
+                &:hover{
                     opacity: 0.8;
                 }
             }
@@ -86,7 +86,7 @@
                         color: blue;
                     }
                 }
-                &.hover{
+                &:hover{
                     opacity: 0.8;
                 }
             }
