@@ -1,4 +1,4 @@
-import { languages } from '../../utils';
+
 import actionTypes from './actionTypes';
 
 export const appStartUpComplete = () => ({
