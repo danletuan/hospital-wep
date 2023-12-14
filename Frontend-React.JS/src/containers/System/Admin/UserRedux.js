@@ -79,7 +79,7 @@ class UserRedux extends Component {
                 phoneNumber: '',
                 address: '',
                 gender: arrGenders && arrGenders.length > 0 ? arrGenders[0].key : '',
-                role: arrRoles && arrRoles.length > 0 ? arrRoles[0] : '',
+                role: arrRoles && arrRoles.length > 0 ? arrRoles[0].key : '',
                 position: arrPositions && arrPositions.length > 0 ? arrPositions[0].key : '',
                 avatar: '',
                 action: CRUD_ACTIONS.CREATE,
