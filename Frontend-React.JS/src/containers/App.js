@@ -42,8 +42,8 @@ class App extends Component {
                         <ConfirmModal />
 
 
-                        <span className="content-container">
-                            <CustomScrollbars style={{height: '100vh', with: '100%'}}>
+                        <div className="content-container">
+                            <CustomScrollbars style={{ height: '100vh', with: '100%' }}>
                                 <Switch>
                                     <Route path={path.HOME} exact component={(Home)} />
                                     <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} />
@@ -52,13 +52,24 @@ class App extends Component {
                                 </Switch>
                             </CustomScrollbars>
 
-                        </span>
+                        </div>
 
-                        <ToastContainer
+                        {/* <ToastContainer
                             className="toast-container" toastClassName="toast-item" bodyClassName="toast-item-body"
                             autoClose={false} hideProgressBar={true} pauseOnHover={false}
                             pauseOnFocusLoss={true} closeOnClick={false} draggable={false}
                             closeButton={<CustomToastCloseButton />}
+                        /> */}
+                        <ToastContainer
+                            position='bottom-right'
+                            autoClose={5000}
+                            hideProgressBar={false}
+                            newestOnTop={false}
+                            closeOnClick
+                            rtl={false}
+                            pauseOnFocusLoss
+                            draggable
+                            pauseOnHover
                         />
                     </div>
                 </Router>

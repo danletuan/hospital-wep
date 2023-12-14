@@ -43,11 +43,12 @@
         "first-name": "Tên",
         "last-name": "Họ",
         "phone-number": "Số điện thoại",
-        "address":"Địa chỉ",
+        "address": "Địa chỉ",
         "gender": "Giới tính",
         "position": "Chức danh",
         "role": "Vai trò",
         "image": "Ảnh đại diện",
-        "save": "Lưu người dùng"
+        "save": "Lưu người dùng",
+        "edit": "Lưu thay đổi"
     }
 }
