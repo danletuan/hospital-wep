@@ -53,7 +53,8 @@ class TableManageUser extends Component {
                                     <td>{item.lastName}</td>
                                     <td>{item.address}</td>
                                     <td>
-                                        <button onClick={() => this.handleEditUser(item)}
+                                        <button
+                                            onClick={() => this.handleEditUser(item)}
                                             className='btn-edit'
                                         ><i className='fas fa-pencil-alt'></i></button>
                                         <button

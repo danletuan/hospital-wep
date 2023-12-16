@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Slider from 'react-slick';
+import * as actions from '../../../store/actions';
 
 class OutStandingDoctor extends Component {
+
+    componentDidMount() {
+        this.props.loadTopDoctors();
+    }
 
     render() {
         return (
@@ -109,6 +114,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
+        loadTopDoctors: () => dispatch(actions.fetchTopDoctor()),
+
     };
 };
 
